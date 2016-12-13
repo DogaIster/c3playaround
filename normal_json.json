@@ -1,0 +1,7 @@
+[
+{"Initial Charge Range":"0-20%", "Device Count":"13" },
+{"Initial Charge Range":"21-40%", "Device Count":"31"},
+{"Initial Charge Range":"41-60%", "Device Count":"61"},
+{"Initial Charge Range":"61-80%", "Device Count":"160"},
+{"Initial Charge Range":"81-90%", "Device Count":"284"}
+]

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battery Status</title>
+    <link href="c3.css" rel="stylesheet" type="text/css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.6.4.min.js"></script>
+    <script src="c3.js"></script>
+	<script src="func.js"></script>
+<!--	<script src="aws.js"></script>-->
+
+</head>
+<body  onLoad="CreateTableFromJSON()">
+<!--<a href="#" onClick="ShowSlope();">Show Average Slope</a>-->
+<table border=0 width=98%>
+	<tr>
+		<td align='center'><font color='navy'><b>Incidents of Deploying Non-Fully-Charged Device for August 15-31, 2016</b></font></td>
+	</tr>
+	<tr>
+		<td>
+			<table id="chart1"></table>
+		</td>
+	</tr>
+		<td align='center'><font color='navy'><b>Battery Drain Rate Comparison (Normalized)</b></font></td>
+	</tr>
+	<tr>
+		<td><div id="avgslope"></div></td>
+	</tr>
+</table>
+<script>
+	ShowSlope();
+	ShowUncharged();
+</script>
+</body>
+</html>
